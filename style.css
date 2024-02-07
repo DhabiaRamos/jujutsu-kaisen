@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffb8c4;
+}
+
+
+#logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.link-header{
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.8s ease-in-out;
+}
+
+.link-header:hover{
+    color: rgb(217, 4, 41)
+}
+
+
+.sign-up{
+    width: 100px;
+    height: 35px;
+    color: #ffffff;
+    background: rgba(217, 4, 41, 0.6);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+.sign-up:hover{
+    transform: scale(0.9)
+}
+
+
+/* Section inicial */
+
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #EDF2F4;
+    width: 100%;
+    height: 600px;
+}
+
+#div-inicio-text, #div-historia-text, #div-personagem-text{
+    width: 50%;
+}
+
+h1{
+    color: #0B090A;
+    font-weight: bolder;
+}
+
+p{
+    width: 90%;
+    margin: 20px 0;
+    color: #161A1D;
+    font-size: 20px;
+}
+
+
+#saber-mais{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #D90429;
+    border-radius: 5px;
+    background: transparent;
+    color: #D90429;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+
+#saber-mais:hover{
+    transform: scale(1.1);
+    background: #D90429;
+    color: #ffffff;
+}
+
+#render-itadori{
+    max-width: 25%;
+}
+
+
+/* Section da historia de jujutsu kaisen */
+
+#historia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffb8c4;
+    width: 100%;
+    height: 600px;
+}
+
+
+#historia h2{
+    color: #A4161A;
+    font-weight: bold;
+}
+
+
+#render2-itadori{
+    margin: 10px 0;
+    max-width: 30%;
+}
+
+
+/* Section sobre o personagem (Itadori) de jujutsu kaisen */
+
+
+#personagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #EDF2F4;
+    width: 100%;
+    height: 600px;
+}
+
+#personagem h2{
+    color: #D90429;
+    font-weight: bold;
+}
+
+
+#render3-itadori{
+    margin: 10px 0;
+    max-width: 30%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    header, main{
+        width: 150%;
+    }
+
+
+    .link-header{
+        display: none;
+    }
+
+    p{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #historia p{
+        text-align: end;
+    }
+
+    #render-itadori{
+        max-width: 40%;
+    }
+
+    #render3-itadori{
+        max-width: 40%;
+    }
+
+    #render2-itadori{
+        max-width: 35%;
+    }
+
+}
